@@ -2,6 +2,8 @@
 
 Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. See http://dlib.net for the main project documentation and API reference.
 
+PDlib is a PHP extension that implements the PHP binging for the dlib library, that now is used in the Nextcloud [FaceRecognition](https://github.com/matiasdelellis/facerecognition) application.
+
 ## Note
 This is a fork of the [original pdlib extension](https://github.com/goodspb/pdlib), which we will use temporarily for the Nextcloud [FaceRecognition](https://github.com/matiasdelellis/facerecognition) application while the original author is not responding.
 
