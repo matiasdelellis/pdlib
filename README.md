@@ -1,69 +1,10 @@
-# PDlib - A PHP extension for Dlib
+# PDlib - A PHP extension for [Dlib](https://github.com/davisking/dlib)
 
-## Requirements
-- Dlib 19.13+
-- PHP 7.0+
-- C++11
-- libx11-dev (on Ubuntu: `sudo apt-get install libx11-dev`)
-
-## Recommended
-- BLAS library  
-If no BLAS library found - dlib's built in BLAS will be used.
-However, if you install an optimized BLAS such as OpenBLAS or the Intel MKL your code
-will run faster.  On Ubuntu you can install OpenBLAS by executing:
-`sudo apt-get install libopenblas-dev liblapack-dev`
-
-## Dependencies
-
-### Dlib
-
-Install Dlib as shared library
-
-```bash
-git clone https://github.com/davisking/dlib.git
-cd dlib/dlib
-mkdir build
-cd build
-cmake -DBUILD_SHARED_LIBS=ON ..
-make
-sudo make install
-```
+Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software in C++ to solve real world problems. See http://dlib.net for the main project documentation and API reference.
 
 ## Installation
 
-```bash
-git clone https://github.com/goodspb/pdlib.git
-cd pdlib
-phpize
-./configure --enable-debug
-make
-sudo make install
-```
-
-### Configure PHP installation
-
-```bash
-vim youpath/php.ini
-```
-
-Append the content below into `php.ini`
-
-```
-[pdlib]
-extension="pdlib.so"
-```
-
-## Tests
-
-For tests, you will need to have bz2 extension installed. On Ubuntu, it boils to:
-```bash
-sudo apt-get install php-bz2
-```
-
-After you successfully compiled everything, just run:
-```bash
-make test
-```
+Read [Installation](https://github.com/matiasdelellis/pdlib/wiki/Installation) documentation on the wiki for details.
 
 ## Usage
 
