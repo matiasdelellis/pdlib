@@ -275,7 +275,7 @@ const zend_function_entry pdlib_functions[] = {
  */
 zend_module_entry pdlib_module_entry = {
 	STANDARD_MODULE_HEADER,
-	"pdlib",
+	PHP_PDLIB_NAME,
 	pdlib_functions,
 	PHP_MINIT(pdlib),
 	PHP_MSHUTDOWN(pdlib),
